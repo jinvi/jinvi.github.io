@@ -33,10 +33,11 @@ workbox.routing.registerRoute(
     })
 )
 
+//缓存用户信息背景图片
 workbox.routing.registerRoute(
     /img\/.*\.(?:jpg|png|gif)/,
     workbox.strategies.cacheFirst({
-        cacheName: pjPrefix + '-img',
+        cacheName: pjPrefix + '-bg',
         plugins: [
             new workbox.expiration.Plugin({
                 maxEntries: 5
