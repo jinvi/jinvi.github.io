@@ -18,7 +18,7 @@ workbox.routing.registerNavigationRoute("/");
 
 //缓存字体图标和用户头像
 workbox.routing.registerRoute(
-    new RegExp('(?:http:\\/\\/at\\.alicdn\\.com\\/.*\\.woff)'),
+    new RegExp('((?:http://at.alicdn.com/.*\\.woff)|(?:https://avatars1.githubusercontent.com))'),
     workbox.strategies.staleWhileRevalidate({
         cacheName: pjPrefix + '-opaque',
         plugins: [
@@ -37,7 +37,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     /img\/.*\.(?:jpg|png|gif)/,
     workbox.strategies.cacheFirst({
-        cacheName: pjPrefix + '-bg1',
+        cacheName: pjPrefix + '-bg',
         plugins: [
             new workbox.expiration.Plugin({
                 maxEntries: 5
