@@ -37,7 +37,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     /img\/.*\.(?:jpg|png|gif)/,
     workbox.strategies.cacheFirst({
-        cacheName: pjPrefix + '-bg',
+        cacheName: pjPrefix + '-bg1',
         plugins: [
             new workbox.expiration.Plugin({
                 maxEntries: 5
