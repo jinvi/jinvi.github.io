@@ -18,7 +18,8 @@ workbox.routing.registerNavigationRoute("/");
 
 //缓存字体图标和用户头像
 workbox.routing.registerRoute(
-    new RegExp('((?:http://at.alicdn.com/.*\\.woff))'),
+    // new RegExp('((?:http://at.alicdn.com/.*\\.woff))'),
+    new RegExp('http://at.alicdn.com/t/font_647982_7b9qbk19kv3.woff'),
     workbox.strategies.staleWhileRevalidate({
         cacheName: pjPrefix + '-opaque',
         plugins: [
