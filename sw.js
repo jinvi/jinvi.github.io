@@ -1,4 +1,4 @@
-importScripts("/wb-assets/precache-manifest.4fcdd719a171f1e5b76cac7a1885cedc.js", "/wb-assets/workbox-v3.4.1/workbox-sw.js");
+importScripts("/wb-assets/precache-manifest.a1cb3bc6ec532e4d5851497765987b9d.js", "/wb-assets/workbox-v3.4.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/wb-assets/workbox-v3.4.1"});
 const pjPrefix = 'Cnode-demo'
 
@@ -16,18 +16,17 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);  //预缓存
 //导航网址返回预缓存文件index.html
 workbox.routing.registerNavigationRoute("/");
 
-//缓存字体图标和用户头像
+//缓存字体图标
 workbox.routing.registerRoute(
-    // new RegExp('((?:http://at.alicdn.com/.*\\.woff))'),
     new RegExp('.*alicdn.*\\.woff'),
     workbox.strategies.staleWhileRevalidate({
-        cacheName: pjPrefix + '-opaque',
+        cacheName: pjPrefix + '-iconfont',
         plugins: [
             new workbox.cacheableResponse.Plugin({
                 statuses: [0, 200]
             }),
             new workbox.expiration.Plugin({
-                maxEntries: 5,
+                maxEntries: 1,
                 purgeOnQuotaError: true
             })
         ]
@@ -46,20 +45,3 @@ workbox.routing.registerRoute(
         ]
     })
 )
-
-workbox.routing.registerRoute(
-    new RegExp('https://avatars1.githubusercontent.com/u/28889383\\?v=4\\&s=120'),
-    workbox.strategies.staleWhileRevalidate({
-        cacheName: pjPrefix + '-myIcon',
-        plugins: [
-            new workbox.cacheableResponse.Plugin({
-                statuses: [0, 200]
-            }),
-            new workbox.expiration.Plugin({
-                maxEntries: 1,
-                purgeOnQuotaError: true
-            })
-        ]
-    })
-)
-
