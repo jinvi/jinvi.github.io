@@ -1,4 +1,4 @@
-importScripts("/wb-assets/precache-manifest.23497d6ac0e02deb6c42fb5724b07b49.js", "/wb-assets/workbox-v3.4.1/workbox-sw.js");
+importScripts("/wb-assets/precache-manifest.fc6abfb17295df1ce0decf9e2e461635.js", "/wb-assets/workbox-v3.4.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/wb-assets/workbox-v3.4.1"});
 const pjPrefix = 'Cnode-demo'
 
