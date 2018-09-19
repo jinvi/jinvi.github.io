@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "a52560153a26e8d4ccd8",
+    "revision": "9268a44fbbe17a118b13",
     "url": "/js/main.js"
   },
   {
@@ -28,11 +28,11 @@ self.__precacheManifest = [
     "url": "/js/0.js"
   },
   {
-    "revision": "d9ff766ba88f5ce40ddd0de14c55fd47",
+    "revision": "8a7c53ac4f42ceafc449c186996f0c1f",
     "url": "/index.html"
   },
   {
-    "revision": "a52560153a26e8d4ccd8",
+    "revision": "9268a44fbbe17a118b13",
     "url": "/css/style.css"
   }
 ];
