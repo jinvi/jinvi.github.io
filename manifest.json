@@ -1,6 +1,6 @@
 {
   "name": "CNODE DEMO",
-  "short_name": "CD1",
+  "short_name": "CD",
   "start_url": "index.html",
   "icons": [{
     "src": "img/touch/icon-128x128.png",
@@ -23,7 +23,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "red",
+  "background_color": "#e4cb1d",
   "display": "standalone",
-  "theme_color": "blue"
+  "theme_color": "#b748aa"
 }
