@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "75ef23701d3fce553c9f",
+    "revision": "bc1ca65d577fd2510c16",
     "url": "/js/main.js"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "75ef23701d3fce553c9f",
+    "revision": "bc1ca65d577fd2510c16",
     "url": "/css/style.css"
   }
 ];
